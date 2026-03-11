@@ -1,0 +1,222 @@
+body{
+    font-family: Arial;
+    margin: 0;
+    text-align: center;
+}
+
+/* Header */
+header{
+    background:#850e67;
+    color:white;
+    padding:30px;
+}
+
+header h1{
+    font-size:36px;
+    margin:0;
+}
+
+header p{
+    margin:5px 0 20px;
+}
+/* Download Button in Header */
+header .download-btn{
+    display:inline-block;
+    background:#ff7e5f; 
+    color:white;
+    padding:10px 20px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-left:10px;
+    transition:0.3s;
+}
+
+header .download-btn:hover{
+    background:#feb47b;
+    transform:scale(1.05);
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+nav a{
+    color:white;
+    margin:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* Social Icons */
+.social i{
+    font-size:25px;
+    margin:10px;
+    color:white;
+}
+
+/* Sections */
+section{
+    padding:40px;
+}
+
+/* About Section */
+#about{
+    background:#fdf6f0;
+    text-align:justify;
+    max-width:100%;
+    margin:0 auto;
+    line-height:1.7;
+    font-size:17px;
+}
+
+#about h2{
+    text-align:center;
+    font-size:36px;
+    font-weight:bold;
+    background:linear-gradient(90deg,#a0522d,#8b4513,#5c3317);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin-bottom:30px;
+}
+/* Skills Section */
+#skills{
+    background:#e7d8c2;  /* Light background */
+    padding:40px 0;
+}
+
+#skills h2{
+    text-align:center;
+    font-size:36px;
+    font-weight:bold;
+    background: linear-gradient(90deg,#ff8c00,#ff1493);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin-bottom:30px;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 220px;
+    background-color: black;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -110px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+/* Skills Section */
+#skills ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    list-style:none;
+    padding:0;
+}
+
+#skills li{
+    font-size:18px;
+    background:white;
+    padding:10px 18px;
+    border-radius:20px;
+    box-shadow:0 0 5px gray;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#skills li:hover{
+    background:black;
+    color:white;
+    transform:scale(1.1);
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Projects Section */
+#projects{
+    background:#fff3e6;
+}
+
+#projects h2{
+    background: linear-gradient(90deg, #def607, #df0909);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom:20px;
+}
+
+.project{
+    background:white;
+    margin:20px auto;
+    padding:20px;
+    width:60%;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+.project h3{
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom:10px;
+}
+
+.project a.live-btn{
+    display:inline-block;
+    background:#4CAF50;
+    color:white;
+    padding:10px 20px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.project a.live-btn:hover{
+    background:pink;
+    transform:scale(1.05);
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Contact Section */
+#contact{
+    background:#f9e6ff;
+}
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    padding:15px;
+}
